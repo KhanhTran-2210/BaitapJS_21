@@ -156,9 +156,9 @@
                       id="searchName"
                     />
                     <div class="input-group-prepend">
-                      <span class="input-group-text" id="btnTimNV"
+                      <button class="input-group-text" id="btnTimNV" onclick="findStaff()"
                         ><i class="fa fa-search"></i
-                      ></span>
+                      ></button>
                     </div>
                   </div>
                 </div>
@@ -364,10 +364,20 @@
 
           <!-- Modal footer -->
           <div class="modal-footer" id="modal-footer">
-            <button id="btnThemNV" type="button" class="btn btn-success" onclick="addStaff()">
+            <button
+              id="btnThemNV"
+              type="button"
+              class="btn btn-success"
+              onclick="addStaff()"
+            >
               Thêm người dùng
             </button>
-            <button id="btnCapNhat" type="button" class="btn btn-success" onclick="updateStaff()">
+            <button
+              id="btnCapNhat"
+              type="button"
+              class="btn btn-success"
+              onclick="updateStaff()"
+            >
               Cập nhật
             </button>
             <button
@@ -408,7 +418,8 @@
           $("#sidebar").toggleClass("active");
         });
       });
-    </script>\
+    </script>
+    
     <script src="./js/staff.js"></script>
     <script src="./js/index.js"></script>
   </body>
